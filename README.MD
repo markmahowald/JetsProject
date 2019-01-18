@@ -1,6 +1,15 @@
-## JETS APPLICATION
+## Jets Application
 
 Description
+
+###Technologies
+* Java
+* Object-oriented design
+  * Polymorphism
+  * Inheritance
+  * Abstraction
+  * Encapsulation
+* UML Diagrams
 
 Technologies
 

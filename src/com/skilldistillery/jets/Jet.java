@@ -48,6 +48,7 @@ public abstract class Jet {
 	// Methods for child classes
 
 	public void fly() {
+		System.out.println(this.Model+" is in the air. ");
 	}
 
 	public double getSpeedInMach() {

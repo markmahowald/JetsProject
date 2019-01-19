@@ -14,7 +14,11 @@ public class CombatReady extends FighterJet {
 //	Methods
 	@Override
 	public void fly() {
-		System.out.println("Prepped and ready to fly sir.  Where are we hunting?");
+		System.out.println(this.getModel()+" prepped and in the air.  Weapons fully loaded. Where are we hunting?");
 		
+	}
+	@Override
+	public void scramble() {
+		System.out.println(this.getModel()+" is in the air and engaging.");
 	}
 }

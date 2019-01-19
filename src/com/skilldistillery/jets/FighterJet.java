@@ -13,6 +13,10 @@ public class FighterJet extends Jet {
 //	Methods
 	@Override
 	public void fly() {
-		System.out.println("We fighters fly way better than your average Jet. ");
+		System.out.println(this.getModel() + " is in the air, but not combat ready. ");
+	}
+	public void scramble() {
+		System.out.print(this.getModel()+" scrambling to intercept,");
+		System.err.println(" but we are very not combat ready.");
 	}
 }

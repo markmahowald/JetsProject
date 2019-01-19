@@ -11,7 +11,7 @@ public class CargoPlane extends Jet {
 	}
 
 	public void loadCargo() {
-		System.out.println("Cargo loaded sir. Ready to fly.");
+		System.out.println(this.getModel()+" reporting cargo loaded sir. Ready to fly.");
 	}
 
 }

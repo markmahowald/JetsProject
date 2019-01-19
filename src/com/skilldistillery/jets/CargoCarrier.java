@@ -12,7 +12,7 @@ public class CargoCarrier extends CargoPlane {
 	
 	@Override
 	public void loadCargo() {
-		System.out.println("Full cargo loaded.  Id like to see a regular cargo plane carry this much");
+		System.out.println(this.getModel()+" reporting cargo loaded.  Id like to see a regular cargo plane carry this much");
 	}
 
 }

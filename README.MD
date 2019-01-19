@@ -9,6 +9,7 @@ Description
   * Inheritance
   * Abstraction
   * Encapsulation
+  * Interface
 * UML Diagrams
 
 Technologies

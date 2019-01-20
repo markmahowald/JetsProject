@@ -6,7 +6,7 @@ public abstract class Jet {
 	private int range;
 	private double speed;
 	private long price;
-
+	private Pilot pilot; 
 //	Getters & Setters for private variables.
 	public String getModel() {
 		return Model;
@@ -52,7 +52,15 @@ public abstract class Jet {
 	}
 
 	public double getSpeedInMach() {
-		return (this.speed * 0.001303);
+		return (this.speed * 0.00130332);
+	}
+
+	public Pilot getPilot() {
+		return pilot;
+	}
+
+	public void setPilot(Pilot pilot) {
+		this.pilot = pilot;
 	}
 
 }

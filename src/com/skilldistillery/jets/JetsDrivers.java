@@ -5,21 +5,21 @@ public class JetsDrivers {
 		System.out.println();
 		System.out.println("Please make a slection (1-8): ");
 		System.out.println(
-				"1. List fleet.\n2. Fly all jets.\n3. View fastest jet. \n4. View jet with longest range. \n5. Load all Cargo Jets.\n6. Bogey on the Radar!\n7. Add a jet to the Fleet. \n8. Quit this glorious application.");
-		
+				"1. List fleet.\n2. Fly all jets.\n3. Fly a specific plane.\n4. View fastest jet. \n5. View jet with longest range. \n6. Load all Cargo Jets.\n7. Bogey on the Radar!\n8. Add a jet to the Fleet. \n9. Quit this glorious application.");
+
 	}
 
 	public void choiceSwitch() {
-		
+
 	}
-	
+
 	public void choiceOne(Jet[] jets) {
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null) {
 
 				Jet j = jets[i];
-				System.out.println((i + 1) + " Model " + j.getModel() + ", Speed " + j.getSpeed() + "k/ph, Range "
-						+ j.getRange() + " k, Price $" + j.getPrice());
+				System.out.println((i + 1) + " Model " + j.getModel() + ", Speed " + j.getSpeed() + "mph, Range "
+						+ j.getRange() + " k, Price $" + j.getPrice() + " & Pilot " + j.getPilot().getName());
 
 			}
 		}
@@ -34,7 +34,9 @@ public class JetsDrivers {
 		}
 	}
 
-	public void choiceThree(Jet[] jets) {
+		
+
+	public void choiceFour(Jet[] jets) {
 		Jet fastest = jets[0];
 		int speed = 0;
 		for (int i = 0; i < jets.length; i++) {
@@ -51,24 +53,8 @@ public class JetsDrivers {
 
 	}
 
-	public void choiceFour(Jet[] jets) {
-		int range = 0;
-		Jet furthest = jets[0];
-		for (int i = 0; i < jets.length; i++) {
-			if (jets[i] != null) {
-				if (range < jets[i].getRange()) {
-					range = jets[i].getRange();
-					furthest = jets[i];
-				}
-			}
-		}
-		System.out.println(furthest.getModel() + " is the jet with the longest range right now.\nIts stats are: ");
-		System.out.println("Model " + furthest.getModel() + ", Speed " + furthest.getSpeed() + "k/ph, Range "
-				+ furthest.getRange() + " km, Price $" + furthest.getPrice());
+	public void choiceSix(Jet[] jets) {
 
-	}
-
-	public void choiceFive(Jet[] jets) {
 		CargoPlane[] cargo = new CargoPlane[jets.length];
 
 		for (int i = 0; i < jets.length; i++) {
@@ -83,7 +69,23 @@ public class JetsDrivers {
 		}
 	}
 
-	public void choiceSix(Jet[] jets) {
+	public void choiceFive(Jet[] jets) {
+		int range = 0;
+		Jet furthest = jets[0];
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+				if (range < jets[i].getRange()) {
+					range = jets[i].getRange();
+					furthest = jets[i];
+				}
+			}
+		}
+		System.out.println(furthest.getModel() + " is the jet with the longest range right now.\nIts stats are: ");
+		System.out.println("Model " + furthest.getModel() + ", Speed " + furthest.getSpeed() + "k/ph, Range "
+				+ furthest.getRange() + " km, Price $" + furthest.getPrice());
+	}
+
+	public void choiceSeven(Jet[] jets) {
 		FighterJet[] fighters = new FighterJet[jets.length];
 
 		for (int i = 0; i < fighters.length; i++) {
@@ -111,7 +113,8 @@ public class JetsDrivers {
 		return nextSpace;
 	}
 
-	public void newJetCreation(Jet[] jets,String nextModel, double nextSpeed, int nextRange, long nextPrice, int choice, int nextSpace) {
+	public void newJetCreation(Jet[] jets, String nextModel, double nextSpeed, int nextRange, long nextPrice,
+			int choice, int nextSpace) {
 		switch (choice) {
 		case 1:
 			Jet f = new FighterJet(nextModel, nextSpeed, nextRange, nextPrice);

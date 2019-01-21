@@ -1,6 +1,6 @@
 ## Jets Application
 
-![Blue Angel](https://www.clipartmax.com/png/small/13-139345_free-blue-angel-cliparts-download-free-clip-art-free-blue-angels-clip.png)
+![Blue Angel](https://en.wikipedia.org/wiki/Blue_Angels#/media/File:Blueangelsformationpd.jpg)
 
 Description: This application allows for the management of an inventory of jets and pilots in an airfield.  There are several subclasses of jets, with different versions of inherited methods. Pilots are randomly assigned to a jet upon the start of the application.  
 

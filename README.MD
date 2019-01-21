@@ -1,10 +1,10 @@
 ## Jets Application
 
+![Blue Angel](https://upload.wikimedia.org/wikipedia/commons/b/bb/Blueangelsformationpd.jpg)
 
 Description: This application allows for the management of an inventory of jets and pilots in an airfield.  There are several subclasses of jets, with different versions of inherited methods. Pilots are randomly assigned to a jet upon the start of the application.  
 
-###Technologies:
-
+###Technologies
 * Java
 * Object-oriented design
   * Polymorphism
@@ -16,6 +16,3 @@ Description: This application allows for the management of an inventory of jets 
 * Randomization
 
 
-
-![BlueAngel](https://www.clipartmax.com/middle/m2i8K9m2G6i8Z5i8_free-blue-angel-cliparts-download-free-clip-art-free-blue-angels-clip/" target="_blank)
-Image, maybe the UML I downloaded from Skill Distillery's GitHub page.

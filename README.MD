@@ -1,6 +1,7 @@
 ## Jets Application
 
-Description
+
+Description: This application allows for the management of an inventory of jets and pilots in an airfield.  There are several subclasses of jets, with different versions of inherited methods. Pilots are randomly assigned to a jet upon the start of the application.  
 
 ###Technologies
 * Java
@@ -11,7 +12,6 @@ Description
   * Encapsulation
   * Interface
 * UML Diagrams
+*Randomization
 
-Technologies
 
-Image, maybe the UML I downloaded from Skill Distillery's GitHub page.

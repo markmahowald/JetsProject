@@ -1,6 +1,6 @@
 ## Jets Application
 
-![Blue Angel](https://en.wikipedia.org/wiki/Blue_Angels#/media/File:Blueangelsformationpd.jpg)
+![Blue Angel](https://upload.wikimedia.org/wikipedia/commons/b/bb/Blueangelsformationpd.jpg)
 
 Description: This application allows for the management of an inventory of jets and pilots in an airfield.  There are several subclasses of jets, with different versions of inherited methods. Pilots are randomly assigned to a jet upon the start of the application.  
 
@@ -13,6 +13,6 @@ Description: This application allows for the management of an inventory of jets 
   * Encapsulation
   * Interface
 * UML Diagrams
-*Randomization
+* Randomization
 
 

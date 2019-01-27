@@ -4,7 +4,7 @@
 
 Description: This application allows for the management of an inventory of jets and pilots in an airfield.  There are several subclasses of jets, with different versions of inherited methods. Pilots are randomly assigned to a jet upon the start of the application.  
 
-###Technologies
+### Technologies
 * Java
 * Object-oriented design
   * Polymorphism
@@ -12,7 +12,7 @@ Description: This application allows for the management of an inventory of jets 
   * Abstraction
   * Encapsulation
   * Interface
-* UML Diagrams
+* UML Diagrams - ![UML](UMLJets.png)
 * Randomization
 
 

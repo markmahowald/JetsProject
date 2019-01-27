@@ -29,9 +29,9 @@ public class JetsApplication {
 				System.out.println("Please choose from the following jets:");
 				for (int i = 0; i < residentJets.length; i++) {
 					if (residentJets[i] != null)
-						System.out.println(i + ". " + residentJets[i].getModel());
+						System.out.println(i+1 + ". " + residentJets[i].getModel());
 				}
-				choice = kb.nextInt();
+				choice = kb.nextInt()-1;
 				System.out.println("You chose " + residentJets[choice].getModel());
 				residentJets[choice].fly();
 
@@ -47,19 +47,19 @@ public class JetsApplication {
 
 			} else if (choice == 8) {
 
-				int nextSpace = driver.nextNullInJetArray(residentJets), nextRange;
+				int nextSpace = driver.nextNullInJetArray(residentJets), nextRange, nextJet;
 				String nextModel = "";
 				double nextSpeed;
 				long nextPrice;
-				Pilot nextPilot;
 
 				System.out.println(
 						"Congradulations on your purchase of a new jet!\nWhat type is it? This air field can house the following:");
 				System.out.println(
 						"1. Vintage Fighter.\n2. Modern combat ready Fighter\n3. Cargo Plane. \n4. A large Cargo Carrier. \n5. A boring regular jet");
-				choice = kb.nextInt();
+				nextJet = kb.nextInt();
+				kb.nextLine();
 				System.out.println("What model is it?");
-				nextModel = kb.next();
+				nextModel = kb.nextLine();
 				System.out.println("How far can you fly it?");
 				nextRange = kb.nextInt();
 				System.out.println("What is it's top speed?");
@@ -75,8 +75,7 @@ public class JetsApplication {
 				System.err.println("");
 				System.out.println("");
 
-				driver.newJetCreation(residentJets, nextModel, nextSpeed, nextRange, nextPrice, choice, nextSpace);
-				residentJets[nextSpace - 1].setPilot(pilots[choice]);
+				driver.newJetCreation(residentJets, nextModel, nextSpeed, nextRange, nextPrice, choice, nextSpace, pilots[choice], nextJet);
 
 			} else if (choice == 9) {
 

@@ -52,15 +52,6 @@ public class AirField {
 		
 		return pilotStart;
 
-//		random assignment generator
-//		
-//		int k = 9, l;
-//		int[] start = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-//		while (k > 0) {
-//			l = (int) (Math.random() * 10);
-//
-//			boolean result = Arrays.stream(start).distinct((l::equals);)
-//			start[k] = (int) (Math.random() * 10);
 
 	}
 
@@ -68,13 +59,3 @@ public class AirField {
 		return jets();
 	}
 }
-//Captain 
-//Captain 
-//Captain 
-//Captain 
-//Captain 
-//Captain 
-//Captain 
-//Captain 
-//Captain 
-//Captain 

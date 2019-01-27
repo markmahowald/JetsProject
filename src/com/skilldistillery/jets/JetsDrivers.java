@@ -18,8 +18,7 @@ public class JetsDrivers {
 			if (jets[i] != null) {
 
 				Jet j = jets[i];
-				System.out.println((i + 1) + " Model " + j.getModel() + ", Speed " + j.getSpeed() + "mph, Range "
-						+ j.getRange() + " k, Price $" + j.getPrice() + " & Pilot " + j.getPilot().getName());
+				System.out.println((i + 1) + " Model " + j.getModel() + ", Speed " + j.getSpeed() + "mph, Range "+ j.getRange() + " k, Price $" + j.getPrice() + " & Pilot " + j.getPilot().getName());
 
 			}
 		}
@@ -113,30 +112,31 @@ public class JetsDrivers {
 		return nextSpace;
 	}
 
-	public void newJetCreation(Jet[] jets, String nextModel, double nextSpeed, int nextRange, long nextPrice,
-			int choice, int nextSpace) {
-		switch (choice) {
+	public Jet newJetCreation(Jet[] jets, String nextModel, double nextSpeed, int nextRange, long nextPrice,
+			int choice, int nextSpace, Pilot pilot, int nextJet) {
+		switch (nextJet) {
 		case 1:
-			Jet f = new FighterJet(nextModel, nextSpeed, nextRange, nextPrice);
+			Jet f = new FighterJet(nextModel, nextSpeed, nextRange, nextPrice, pilot);
 			jets[nextSpace] = f;
-			break;
+			return f;
 		case 2:
-			Jet fc = new CombatReady(nextModel, nextSpeed, nextRange, nextPrice);
+			Jet fc = new CombatReady(nextModel, nextSpeed, nextRange, nextPrice, pilot);
 			jets[nextSpace] = fc;
-			break;
+			return fc;
 		case 3:
-			Jet cp = new CargoPlane(nextModel, nextSpeed, nextRange, nextPrice);
+			Jet cp = new CargoPlane(nextModel, nextSpeed, nextRange, nextPrice, pilot);
 			jets[nextSpace] = cp;
-			break;
+			return cp;
 		case 4:
-			Jet cc = new CargoCarrier(nextModel, nextSpeed, nextRange, nextPrice);
+			Jet cc = new CargoCarrier(nextModel, nextSpeed, nextRange, nextPrice, pilot);
 			jets[nextSpace] = cc;
-			break;
+			return cc;
 		case 5:
-			Jet impl = new JetImpl(nextModel, nextSpeed, nextRange, nextPrice);
+			Jet impl = new JetImpl(nextModel, nextSpeed, nextRange, nextPrice, pilot);
 			jets[nextSpace] = impl;
-			break;
+			return impl;
 		}
+		return null;
 	}
 
 }

@@ -42,7 +42,15 @@ public abstract class Jet {
 
 //	Constructors
 	public Jet(String model, double speed, int range, long price) {
-
+		this.Model = model;
+		this.speed = speed;
+		this.range = range;
+		this.price = price;
+		
+	}
+	public Jet(String model, double speed, int range, long price, Pilot pilot) {
+		super();
+		this.pilot = pilot;
 	}
 
 	// Methods for child classes

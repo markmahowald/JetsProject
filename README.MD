@@ -12,7 +12,11 @@ Description: This application allows for the management of an inventory of jets 
   * Abstraction
   * Encapsulation
   * Interface
+<<<<<<< HEAD
 * UML Diagrams - ![UML](UMLJets.png)
+=======
+* UML Diagrams
+>>>>>>> 67c1a0905c103ce707eb1ba57857b6b936e313d5
 * Randomization
 
 
